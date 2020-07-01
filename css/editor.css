@@ -1,0 +1,66 @@
+/**
+ * This support file is used to style the WYSIWYG editor in the CMS --primary:#242d76;--secondary:#2363a8;
+ */
+
+
+a {
+	color: #008bd5;
+}
+
+.text-primary {
+	color: #242d76;
+}
+
+.text-secondary {
+	color: #2363a8;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	color: #242d76;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+p img.left {
+    float: left;
+    max-width: 50%;
+    margin: 5px 20px 10px 0;
+}
+p img.right {
+    float: right;
+    max-width: 50%; /* Responsive width */
+    margin: 5px 0 10px 20px;
+}
+p img.leftAlone {
+    float: left;
+    margin-right: 100%;
+    margin-bottom: 10px;
+    clear: both;
+}
+p img.rightAlone {
+    float: right;
+    margin-left: 100%;
+    margin-bottom: 10px;
+    clear: both;
+}
+p img.center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+blockquote {
+  /*background: transparent url(../images/blockquote.png) no-repeat 0px 6px;*/
+  padding: 20px;
+  font-style: italic;
+  clear: both;
+}
+
+.text-left{text-align:left!important}.text-right{text-align:right!important}.text-center{text-align:center!important}

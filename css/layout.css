@@ -1,0 +1,226 @@
+.animated,
+.animated * {
+    -webkit-transition: all 300ms ease-in-out;  -moz-transition: all 300ms ease-in-out;  -o-transition: all 300ms ease-in-out;  transition: all 300ms ease-in-out;
+}
+
+.animatedSlow,
+.animatedSlow * {
+    -webkit-transition: all 1s ease-in-out;  -moz-transition: all 1s ease-in-out;  -o-transition: all 1s ease-in-out;  transition: all 1s ease-in-out;
+}
+
+.animated1,
+.animated1 * {
+    -webkit-transition: all 1.3s ease-in-out;  -moz-transition: all 1.3s ease-in-out;  -o-transition: all 1.3s ease-in-out;  transition: all 1.3s ease-in-out;
+}
+
+.animated2,
+.animated2 * {
+    -webkit-transition: all 1.5s ease-in-out;  -moz-transition: all 1.5s ease-in-out;  -o-transition: all 1.5s ease-in-out;  transition: all 1.5s ease-in-out;
+}
+.font-size-0-75 {
+	font-size: .75rem;
+	line-height: 1.2;
+}
+
+.font-size-0-875 {
+	font-size: .875rem;
+	line-height: 1;
+}
+
+.font-size-1 {
+	font-size: 1rem;
+	line-height: 1.2;
+}
+
+.font-size-1-25 {
+	font-size: 1.25rem;
+	line-height: 1.2;
+}
+
+.font-size-1-5 {
+	font-size: 1.5rem;
+	line-height: 1.2;
+}
+
+.font-size-1-75 {
+	font-size: 1.75rem;
+	line-height: 1.2;
+}
+
+.font-size-2 {
+	font-size: 2rem;
+	line-height: 1.2;
+}
+
+.font-size-3 {
+	font-size: 3rem;
+	line-height: 1.2;
+}
+
+.font-size-3-5 {
+	font-size: 3.5rem;
+	line-height: 1.2;
+}
+
+.z-index-n1 {
+	z-index: -1;
+}
+
+.z-index-2 {
+	z-index: 2;
+}
+
+* {
+    outline: none !important;
+}
+
+body {
+	
+}
+
+img, div, input, video {
+    max-width: 100%;
+}
+
+section {
+	overflow: hidden;
+}
+
+iframe {
+	width: 100%;
+}
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+form input[type=text],
+form input[type=password],
+form input[type=email],
+form textarea,
+form select {
+	width: 100%;
+	padding: 5px 10px;
+}
+
+form .optionset ul {
+	list-style: none;
+	padding-left: 0px;
+}
+
+form .message.validation {
+	color: #dc3545;
+}
+
+form .hide {
+	display: none;
+}
+
+form .checkbox {
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+}
+
+form .checkbox label {
+	width: 90%;
+}
+
+form .checkbox input {
+	vertical-align: top;
+	margin-top: 6px;
+}
+form .text label,
+form .textarea label {
+	color: #006135;
+	margin-top: .5rem;
+}
+
+.form-group--no-label {
+	margin-bottom: 0.25rem;
+}
+
+
+textarea[readonly] {
+	background-color: #DDDDDD;
+}
+
+header {
+
+}
+
+footer {
+	
+}
+
+
+#mobileMenu {
+	/*display: none;*/
+	position: fixed;
+	top: 0px;
+	left: -300px;
+	z-index: 200;
+	background-color: rgba(255,255,255,.95);/*rgba(53,53,53,1);*/
+	
+	width: 250px;
+	bottom: 0px;
+	overflow: auto;
+}
+	#mobileMenu.is-active {
+		left: 0px;
+	}
+
+	#mobileMenu > a {
+		background: linear-gradient(to right,#064a3b,#9cbf22);
+	}
+	#mobileMenu ul {
+		list-style: none;
+	}
+		#mobileMenu nav > ul {
+			padding: 10px 20px;
+		}
+		#mobileMenu ul a {
+			color: #565656;
+		}
+
+		#mobileMenu ul a:hover,
+		#mobileMenu ul .section > a,
+		#mobileMenu ul .current > a {
+			color: #064a3b;
+			text-decoration: underline;
+			text-decoration-color: #064a3b;
+		}
+
+@media (max-width: 1024px) {
+    .font-size-0-875 {
+		font-size: calc(.875rem - 30%);
+	}
+
+	.font-size-1 {
+		font-size: calc(1rem - 30%);
+	}
+
+	.font-size-1-25 {
+		font-size: calc(1.25rem - 30%);
+	}
+
+	.font-size-1-5 {
+		font-size: calc(1.5rem - 30%);
+	}
+
+	.font-size-1-75 {
+		font-size: calc(1.75rem - 30%);
+	}
+
+	.font-size-2 {
+		font-size: calc(2rem - 30%);
+	}
+
+	.font-size-3 {
+		font-size: calc(3rem - 30%);
+	}
+
+	.font-size-3-5 {
+		font-size: calc(3.5rem - 30%);
+	}
+}
