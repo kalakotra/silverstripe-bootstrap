@@ -11,8 +11,8 @@
         }
     ],
     "require": {
-        "silverstripe/framework": "^4.0",
-        "kalakotra/silverstripe-scss": "^1.0"
+        "composer/installers": "*",
+        "silverstripe/framework": "^4.0"
     },
 	"extra": {
 		"branch-alias": {
