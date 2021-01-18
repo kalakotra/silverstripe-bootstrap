@@ -12,7 +12,9 @@
     ],
     "require": {
         "composer/installers": "*",
-        "silverstripe/framework": "^4.0"
+        "silverstripe/framework": "^4.0",
+        "axllent/silverstripe-scss": "^1.5",
+        "axllent/silverstripe-minifier": "^1.0"
     },
 	"extra": {
 		"expose": [
