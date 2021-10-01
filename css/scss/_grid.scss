@@ -9,6 +9,10 @@
     @include make-container-max-widths();
   }
 
+  .container-halfs {
+    @include make-container-max-widths-halfs();
+  }
+
   // 100% wide container at all breakpoints
   .container-fluid {
     @include make-container();
@@ -25,10 +29,18 @@
         max-width: $container-max-width;
       }
 
+      %responsive-container-halfs-#{$breakpoint} {
+        max-width: $container-max-width/2;
+      }
+
       @each $name, $width in $grid-breakpoints {
         @if ($container-max-width > $width or $breakpoint == $name) {
           .container#{breakpoint-infix($name, $grid-breakpoints)} {
             @extend %responsive-container-#{$breakpoint};
+          }
+
+          .container-halfs#{breakpoint-infix($name, $grid-breakpoints)} {
+            @extend %responsive-container-halfs-#{$breakpoint};
           }
         }
       }

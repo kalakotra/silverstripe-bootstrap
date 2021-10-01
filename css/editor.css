@@ -1,19 +1,67 @@
-/**
- * This support file is used to style the WYSIWYG editor in the CMS --primary:#242d76;--secondary:#2363a8;
- */
-
+:root {
+    --primary: #f3793e;
+    --secondary: #272929;
+}
 
 a {
-	color: #96bc0b;
+	color: var(--primary);
 }
 
 .text-primary {
-	color: #96bc0b;
+    color: var(--primary);
+}
+.text-secondary {
+    color: var(--secondary);
+}
 
+
+.btn.btn-primary {
+    display: inline-block;
+    font-weight: 400;
+    color: #ffffff !important;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    background-color: var(--primary);
+    border-color: var(--primary);
+    text-decoration: none;
+
+}
+
+.btn.btn-secondary {
+    display: inline-block;
+    font-weight: 400;
+    color: #ffffff !important;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    text-decoration: none;
+
+}
 
 
 h1, h2, h3, h4, h5, h6 {
-	color: #96bc0b;
+	/*color: var(--primary);*/
 }
 
 img {

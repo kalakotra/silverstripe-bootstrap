@@ -1,37 +1,205 @@
+.animatedMenu,
+.animatedMenu * {
+    -webkit-transition: transform 300ms ease-in-out;  -moz-transition: transform 300ms ease-in-out;  -o-transition: transform 300ms ease-in-out;  transition: transform 300ms ease-in-out;
+    transition-property: transform, background, color;
+}
+
+nav.language ul li img {
+	width: 20px;
+	padding-bottom: 5px;
+}
+
+nav.primary ul {
+	list-style: none;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	/*text-align: right;*/
+}
+
+nav.primary a:hover {
+	text-decoration: none;
+}
+/* main menu part */
+nav.primary > ul > li {
+	/*display: inline-block;
+	padding-left: 1rem;*/
+	position: relative;
+	padding-left: ;
+}
+
+    nav.primary > ul > li {
+        position: relative;
+    }
+
+        nav.primary > ul > li:not(:first-child):before {
+            content: "";
+            position: absolute;
+            top: 30%;
+            bottom: 30%;
+            left: 0.5px;
+            width: 1px;
+            background: var(--secondary);
+        }
+
+        nav.primary > ul > li > a {
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: var(--secondary);
+            text-transform: uppercase;
+        }
+        nav.primary > ul > li.current > a,
+        nav.primary > ul > li.section > a {
+
+        }
+        nav.primary > ul > li.current > a:before,
+        nav.primary > ul > li.section > a:before {
+
+        }
+
+
+	nav.primary > ul li {
+		position: relative;
+	}
+
+		nav.primary > ul li ul {
+			position: absolute;
+			left: -10000px;
+			top: 0px;
+			width: 150%;
+			padding: 0px;
+			transform: translateY(10px);
+			background-color: #fff;
+			z-index: 1;
+		}
+
+		nav.primary > ul li:hover > ul {
+			transform: translateY(0px);
+			padding-top: 0px;
+			padding-bottom: 0px;
+			left: 12px;
+			top: 100%;
+		}
+
+		nav.primary > ul li ul > li {
+			border-bottom: 1px solid var(--primary);
+		}
+
+		nav.primary > ul li ul > li a {
+			font-size: .875rem;
+			font-weight: 600;
+		}
+			nav.primary > ul li ul > li:hover a {
+				/*background-color: #fff;*/
+				color: var(--primary);
+			}
+
+
+nav.primary li li a {
+	text-align: left;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+}
+
+nav.primary li .current > a,
+nav.primary li .section > a,
+nav.primary li li:hover > a {
+	background: var(--light);
+	/*color: #fff;*/
+}
+
+
+.hamburger {
+	/*background-color: rgba(0, 0, 0, .5) !important;*/
+}
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+	background-color: var(--primary) !important;
+}
+
+#mobileMenu .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+	/*background-color: var(--primary) !important;*/
+}
 
 #mobileMenu {
 	/*display: none;*/
 	position: fixed;
 	top: 0px;
-	left: -300px;
-	z-index: 200;
+	left: -3000px;
+	z-index: 1021;
 	background-color: rgba(255,255,255,.95);/*rgba(53,53,53,1);*/
-	
+
 	width: 250px;
+	min-width: 250px;
 	bottom: 0px;
-	overflow: auto;
+	overflow: hidden;
 }
 	#mobileMenu.is-active {
 		left: 0px;
 	}
 
 	#mobileMenu > a {
-		background: linear-gradient(to right,#064a3b,#9cbf22);
+		/*background: linear-gradient(to right,#064a3b,#9cbf22);*/
 	}
 	#mobileMenu ul {
 		list-style: none;
 	}
 		#mobileMenu nav > ul {
-			padding: 10px 20px;
+			padding: 10px 15px;
 		}
-		#mobileMenu ul a {
-			color: #565656;
+
+			#mobileMenu nav > ul.sideMain > li {
+				position: relative;
+			}
+		#mobileMenu > nav > ul > li > a {
+			color: #000;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+
+		#mobileMenu > nav > ul > li a {
+			color: #000;
 		}
 
 		#mobileMenu ul a:hover,
 		#mobileMenu ul .section > a,
 		#mobileMenu ul .current > a {
-			color: #064a3b;
-			text-decoration: underline;
-			text-decoration-color: #064a3b;
+			/*color: var(--secondary);
+			text-decoration: none;
+			text-decoration-color: var(--secondary);*/
 		}
+
+
+
+#mobileMenu .arrow {
+	position: absolute;
+	right: 0px;
+	top: 10px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-top: 2px solid var(--secondary);
+	border-right: 2px solid  var(--secondary);
+	transform: rotate(45deg);
+
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+	#mobileMenu .active > .arrow {
+		transform: rotate(135deg);
+	}
+
+#mobileMenu .sideSub {
+	/*max-height: 0px;*/
+	overflow: hidden;
+	padding-left: 15px;
+
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+	#mobileMenu .active > .sideSub {
+		max-height: 1000px;
+	}

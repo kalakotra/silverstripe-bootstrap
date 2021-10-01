@@ -26,6 +26,10 @@
 	font-size: 2rem;
 }
 
+.font-size-2-5 {
+	font-size: 2.5rem;
+}
+
 .font-size-3 {
 	font-size: 3rem;
 }
@@ -36,7 +40,7 @@
 
 
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
     .font-size-0-875 {
 		font-size: calc(.875rem - 30%);
 	}
@@ -61,11 +65,19 @@
 		font-size: calc(2rem - 30%);
 	}
 
+	.font-size-2-5 {
+		font-size: calc(2rem - 30%);
+	}
+
 	.font-size-3 {
-		font-size: calc(3rem - 30%);
+		font-size: calc(2rem - 30%);
 	}
 
 	.font-size-3-5 {
-		font-size: calc(3.5rem - 30%);
+		font-size: calc(2rem - 30%);
 	}
+}
+
+@media (max-width: 768px) {
+    
 }

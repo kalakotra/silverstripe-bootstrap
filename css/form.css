@@ -33,7 +33,7 @@ form label {
         color: #888;
     }
 
-form input.text,
+form input,
 form textarea,
 form .textajaxuniquetext,   /* Not sure if this is used? */
 form select {
@@ -41,8 +41,8 @@ form select {
     max-width: 400px;
     padding: 6px 5px;
     font-size: 15px;
-    background-color: #fff;
-    border: 1px solid #dad9d9;
+    background-color: #f1f1f1;
+    border: 1px solid #f1f1f1;
 }
     .ie7 form select { width: 400px; } /* fix for ie7's rendering of max-width property on select input */
 

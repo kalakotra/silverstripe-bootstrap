@@ -42,6 +42,7 @@
 
 // Contextual colors
 
+.text-black { color: $black !important; }
 .text-white { color: $white !important; }
 
 @each $color, $value in $theme-colors {

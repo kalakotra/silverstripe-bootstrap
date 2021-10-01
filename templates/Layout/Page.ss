@@ -1,9 +1,11 @@
-<div class="container">
-	<div class="row pt-5 justify-content-center">
-		<div class="col-12  py-5">
-			<h1 class="text-center">$Title</h1>
-			$Content
-			$Form
-			$CommentsForm
+<% if $Content %>
+	<main>
+		<div class="container">
+			<div class="row py-3 py-lg-5 justify-content-center">
+				<div class="col-12 col-md-10- col-xl-8">
+					$Content
+				</div>
+			</div>
 		</div>
-</div>
+	</main>
+<% end_if %>

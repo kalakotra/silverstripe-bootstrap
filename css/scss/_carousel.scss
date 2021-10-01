@@ -165,17 +165,20 @@
     margin-left: $carousel-indicator-spacer;
     text-indent: -999px;
     cursor: pointer;
-    background-color: $carousel-indicator-active-bg;
+    background-color: $white;
     background-clip: padding-box;
     // Use transparent borders to increase the hit area by 10px on top and bottom.
-    border-top: $carousel-indicator-hit-area-height solid transparent;
-    border-bottom: $carousel-indicator-hit-area-height solid transparent;
+    /*border-top: $carousel-indicator-hit-area-height solid transparent;
+    border-bottom: $carousel-indicator-hit-area-height solid transparent;*/
+    border: 1px solid $carousel-indicator-active-bg;
     opacity: .5;
     @include transition($carousel-indicator-transition);
+    border-radius: 50%;
   }
 
   .active {
     opacity: 1;
+    background-color: $carousel-indicator-active-bg;
   }
 }
 
@@ -186,12 +189,9 @@
 
 .carousel-caption {
   position: absolute;
-  right: (100% - $carousel-caption-width) / 2;
-  bottom: 20px;
-  left: (100% - $carousel-caption-width) / 2;
+  bottom: 0px;
+  left: 0px;
+  top: 0px;
+  right: 0px;
   z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: $carousel-caption-color;
-  text-align: center;
 }
