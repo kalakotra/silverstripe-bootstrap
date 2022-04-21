@@ -22,7 +22,8 @@
             "css",
             "images",
             "javascript",
-            "webfonts"
+            "webfonts",
+            "example-files"
         ]
 	}
 }
