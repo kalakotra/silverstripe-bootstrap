@@ -1,0 +1,35 @@
+<?php
+
+use SilverStripe\ORM\DataExtension;
+use SilverStripe\Forms\FieldList;
+
+class CustomSiteConfig extends DataExtension
+{
+
+    private static $db = [
+    ];
+
+    private static $has_one = [
+        
+    ];
+
+    private static $has_many = [
+
+    ];
+
+    private static $many_many = [
+
+    ];
+
+    private static $many_many_extraFields = [
+
+    ];
+
+    private static $owns = [
+    ];
+
+    public function updateCMSFields(FieldList $fields)
+    {
+        
+    }
+}

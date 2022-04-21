@@ -18,22 +18,6 @@
     -webkit-transition: all 1.5s ease-in-out;  -moz-transition: all 1.5s ease-in-out;  -o-transition: all 1.5s ease-in-out;  transition: all 1.5s ease-in-out;
 }
 
-.overflow-visible {
-	overflow: visible;
-}
-
-.z-index-n1 {
-	z-index: -1;
-}
-
-.z-index-2 {
-	z-index: 2;
-}
-
-.line-height-1 {
-	line-height: 1;
-}
-
 .d-none-special {
 	display: inline-block;
 	font-size: 0px;
@@ -43,128 +27,33 @@
 	height: 0px;
 }
 
-.text-small {
-	font-size: .875rem;
-}
-
-.text-white * {
-    color: #fff;
-}
 
 body {
-
 	overflow-x: hidden;
 }
 
 header {
-    background: linear-gradient(to bottom, var(--primary) 30px, white 30px);
+    
 }
 	header.scrolled {
-		/*background-color: rgba(0, 0, 0, .5);*/
+		
 	}
 
 footer {
 
 }
     footer * {
-        color: #fff;
+        
     }
 
 
-form input[type=text],
-form input[type=email],
-form textarea,
-form select {
-    width: 100%;
-    padding: 1rem;
-    font-size: 15px;
-    background-color: #f1f1f1;
-    border: 1px solid #f1f1f1;
-}
-
-.social-link {
-    display: inline-block;
-    background: var(--secondary);
-    padding: 5px;
-    color: white;
-    margin-top: 10px;
-    border-radius: 5px;
-    min-width: 40px;
-    text-align: center;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-#carouselHome .carousel-item {
-    background-size: cover;
-    background-position: center;
-}
-    #carouselHome .carousel-item > div {
-        padding-top: 15%;
-        padding-bottom: 10%;
-    }
-
-    .sliderTextBg {
-        position: relative;
-    }
-        .sliderTextBg:before {
-            content: "";
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            right: 0px;
-            bottom: 0px;
-            background-color: var(--secondary);
-            opacity: .7;
-        }
-
-        .sliderTextBg * {
-            position: relative;
-        }
-
-        .sliderForground {
-            position: absolute;
-            left: 0px;
-            bottom: 0px;
-            width: 100%;
-        }
-
-.blackBoxText {
-    padding: 30px;
-    color: #fff;
-    display: inline-block;
-    text-align: center;
-    position: relative;
-}
-.blackBoxText:before {
-    content: "";
-    position: absolute;
-    top: -30px;
-    bottom: -30px;
-    left: -65px;
-    right: -65px;
-    background-image: url("../images/black-bg.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: -1;
-}
-
-.dash-bg {
-    background: transparent url("../images/dash-bg.jpg") no-repeat center;
-    background-size: cover;
-}
-
-.homeImageBox {
-    padding: 30px;
-}
 
 @media (max-width: 1800px) {
 
 }
 
 @media (max-width: 1600px) {
-
+    
 }
 
 @media (max-width: 1400px) {
@@ -172,21 +61,19 @@ form select {
 }
 
 @media (max-width: 1182px) {
-
+    
 }
 
 @media (max-width: 1000px) {
-    .blackBoxText:before {
-        background-color: #000;
-        left: -10px;
-        right: -10px;
-        top: -10px;
-        bottom: -10px;
-    }
+    
+}
+
+@media (max-width: 991px) {
+    
 }
 
 @media (max-width: 550px) {
-
+    
 }
 
 

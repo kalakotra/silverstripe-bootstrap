@@ -3,7 +3,7 @@ jQuery.noConflict();
 (function($) {
 	$(document).ready(function() {
 		$(".hamburger").click(function() {
-			$(this).toggleClass("is-active");
+			$(".hamburger").toggleClass("is-active");
 			$("#mobileMenu").toggleClass("is-active");
 		});
 
@@ -11,8 +11,6 @@ jQuery.noConflict();
 			var myHolder = $(this).parent();
 			myHolder.toggleClass("active");
 		});
-
-		$("input[type=submit]").addClass("btn btn-primary btn-block");
 
 		$(window).scroll(function() {
 			if ($(document).scrollTop() > 100) {
@@ -22,13 +20,8 @@ jQuery.noConflict();
 			}
 		});
 
-		$(".carouselBlogHolder").each(function() {
-			var myID = "#"+$(this).attr("id");
-			$(this).find(".carousel-indicators li").each(function() {
-				$(this).attr("data-target", myID);
-			});
-		});
-
+		/*
+		// Enable AOS in PageController::init() function first!!!
 		AOS.init({
 			// Global settings:
 			disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -51,5 +44,6 @@ jQuery.noConflict();
 			anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 		});
+		*/
 	});
 }(jQuery));

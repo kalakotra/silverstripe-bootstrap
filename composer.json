@@ -1,21 +1,24 @@
 {
-    "name": "kalakotra/lorangerie",
-    "description": "Silverstripe Theme based on Bootstrap",
+    "name": "kalakotra/silverstripe-theme-starter",
+    "description": "The SilverStripe theme on Bootstrap SCSS",
     "type": "silverstripe-theme",
-    "keywords": ["silverstripe", "theme", "bootstrap", "germany"],
+    "keywords": ["silverstripe", "theme"],
     "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Amir Mehmedovic",
-
-            "homepage": "http://kalakotra.com"
+            "homepage": "http://www.kalakotra.com"
         }
     ],
     "require": {
-        "composer/installers": "*"
+        "composer/installers": "*",
+        "silverstripe/framework": ">=3.5"
     },
 	"extra": {
-		"expose": [
+		"branch-alias": {
+			"dev-master": "3.2.x-dev"
+		},
+        "expose": [
             "css",
             "images",
             "javascript",
