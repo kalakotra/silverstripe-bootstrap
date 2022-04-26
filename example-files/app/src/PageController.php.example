@@ -37,6 +37,8 @@ namespace {
 
                 Requirements::css($myThemePath.'css/scss/bootstrap.scss');
 
+                Requirements::css($myThemePath.'css/editor.scss');
+
                 Requirements::backend()->setWriteHeaderComment(false);
                 $css = [];
 

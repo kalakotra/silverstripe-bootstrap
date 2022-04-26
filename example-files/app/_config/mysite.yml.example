@@ -6,9 +6,6 @@ SilverStripe\Core\Manifest\ModuleManifest:
 Silverstripe\SiteConfig\SiteConfig:
   extensions:
     - CustomSiteConfig
-SilverStripe\Forms\HTMLEditor\TinyMCEConfig:
-  editor_css:
-    - 'themes/silverstripe-theme-starter/css/editor.css'
 SilverStripe\View\SSViewer:
   rewrite_hash_links: false
 
