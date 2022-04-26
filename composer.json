@@ -12,7 +12,9 @@
     ],
     "require": {
         "composer/installers": "*",
-        "silverstripe/framework": ">=3.5"
+        "silverstripe/framework": ">=3.5",
+        "axllent/silverstripe-scss": "^1.7",
+        "axllent/silverstripe-minifier": "^1.0"
     },
 	"extra": {
 		"branch-alias": {
