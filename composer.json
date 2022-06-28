@@ -1,6 +1,6 @@
 {
     "name": "kalakotra/silverstripe-bootstrap",
-    "description": "The SilverStripe theme on Bootstrap SCSS",
+    "description": "The SilverStripe theme on Bootstrap 5 SCSS",
     "type": "silverstripe-theme",
     "keywords": ["silverstripe", "theme"],
     "license": "BSD-3-Clause",
