@@ -1,10 +1,10 @@
 <div id="{$CarouselID}" class="carousel slide <% if CarouselCustomClass %>$CarouselCustomClass<% end_if %>"  data-bs-ride="carousel">
     <% if CarouselIndicator=1 %>
-        <ol class="carousel-indicators">
+        <div class="carousel-indicators">
             <% loop CarouselLoop %>
-                <li data-target="#{$Up.CarouselID}" data-slide-to="$Pos(0)" <% if First %>class="active"<% end_if %>></li>
+                <button type="button" data-bs-target="#{$Up.CarouselID}" data-bs-slide-to="$Pos(0)" <% if First %>class="active" aria-current="true"<% end_if %> aria-label="Slide $Pos(1)"></button>
             <% end_loop %>
-        </ol>
+        </div>
     <% end_if %>
     <div class="carousel-inner">
         <% loop CarouselLoop %>
@@ -20,13 +20,13 @@
         <% end_loop %>
     </div>
     <% if CarouselControls=1 %>
-        <a class="carousel-control-prev" href="#{$CarouselID}" role="button" data-bs-target="#{$CarouselID}" data-bs-slide="prev">
-            <i class="fa fa-chevron-left text-primary"></i>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#{$CarouselID}" role="button" data-bs-target="#{$CarouselID}" data-bs-slide="next">
-            <i class="fa fa-chevron-right text-primary"></i>
-            <span class="sr-only">Next</span>
-        </a>
+        <button class="carousel-control-prev" type="button" data-bs-target="#{$CarouselID}" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#{$CarouselID}" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     <% end_if %>
 </div>

@@ -1,5 +1,5 @@
 {
-    "name": "kalakotra/silverstripe-theme-starter",
+    "name": "kalakotra/silverstripe-bootstrap",
     "description": "The SilverStripe theme on Bootstrap SCSS",
     "type": "silverstripe-theme",
     "keywords": ["silverstripe", "theme"],
